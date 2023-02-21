@@ -6,6 +6,8 @@ export default {
       open: false
     }
   },
+  
+  // Open Subscribe Input
   methods: {
     toggle() {
      this.open = !this.open

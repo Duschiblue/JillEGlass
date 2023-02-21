@@ -146,10 +146,10 @@ export default {
   margin-bottom: 14px;
 }
 
+/* Sidebar Spacer Between News & Devisions*/
 .spacer {
   flex: 1
 }
-
 </style>
 
 <!-- ------------------------------------------------ -->
