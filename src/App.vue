@@ -95,12 +95,12 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.all {
-  margin-top: 14px;
-}
-
 .topbar a:hover {
   color: black;
+}
+
+.all {
+  margin-top: 14px;
 }
 
 /* Sidebar Design */

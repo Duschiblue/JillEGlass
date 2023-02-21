@@ -1,13 +1,13 @@
 <!-- Javascript -->
 <script>
 export default {
+
+  // Open Subscribe Input
   data() {
     return {
       open: false
     }
   },
-  
-  // Open Subscribe Input
   methods: {
     toggle() {
      this.open = !this.open
@@ -65,6 +65,7 @@ export default {
     background-color: #ade6d9;
     color: black;
     box-shadow: 3px 3px 5px #679289 inset;
+    cursor: pointer;
 }
 
 /* Subscribe Input */
