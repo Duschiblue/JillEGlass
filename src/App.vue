@@ -53,6 +53,9 @@ export default {
     <div class="spacer"/>
     <News/>
   </div>
+
+  <!-- Shop Choices -->
+  <div class="item-container"></div>
 </template>
 
 <!-- ------------------------------------------------ -->
