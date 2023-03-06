@@ -8,6 +8,8 @@ export default {
       open: false
     }
   },
+
+  // Toggle Click
   methods: {
     toggle() {
      this.open = !this.open
@@ -20,22 +22,22 @@ export default {
 
 <!-- HTML -->
 <template>
-    <!-- News Link -->
-    <div v-on:click="toggle" class="news">News</div>
-    <div v-if="open">
-    <div v-on:click="toggle" class="backdrop" />
+  <!-- News Click -->
+  <div v-on:click="toggle" class="news">News</div>
+  <div v-if="open">
 
-      <!-- Subscribe Popup -->
-      <div class="subscribe-container">
-        <div class="elements-flex">
-          <h1>Subscribe for updates on restock!</h1>
-          <input type="email" id="email" placeholder="alex@gmail.com">
-          <br> <!-- Break Between Input & Button -->
-          <button>Subcribe</button>
-          <h6>By sharing your email adress, you agree to recieve marketing emails and consent to our <a href="/about"><span>Terms & Conditions</span></a> and <a href="/about"><span>Privacy Policy</span></a>.</h6>
-        </div>
+  <!-- Subscribe Popup -->
+  <div v-on:click="toggle" class="backdrop" />
+    <div class="subscribe-container">
+      <div class="elements-flex">
+        <h1>Subscribe for updates on restock!</h1>
+        <input type="email" id="email" placeholder="alex@gmail.com">
+        <br> <!-- Break Between Input & Button -->
+        <button>Subcribe</button>
+        <h6>By sharing your email adress, you agree to recieve marketing emails and consent to our <a href="/about"><span>Terms & Conditions</span></a> and <a href="/about"><span>Privacy Policy</span></a>.</h6>
       </div>
     </div>
+  </div>
 </template>
 
 <!-- ------------------------------------------------ -->

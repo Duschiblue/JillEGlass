@@ -2,26 +2,31 @@
 <script>
 // Imports
 import News from "./components/News.vue"
- // import Cart from "./components/Cart.vue"
+import Cart from "./components/Cart.vue"
 
 export default {
   components: {
-    News
+    News,
+    Cart
   },
 
   // Shopping Cart Hovering
   data() {
     return {
-      img: "../src/assets/shopping-cart.png"
+      img: "../src/assets/shopping-cart.png",
+      cart_visible: false,
     }
   },
+
   methods: {
     changecart() {
       this.img = '../src/assets/sc1.png'
+      this.cart_visible = true
     },
     changecart1() {
       this.img = '../src/assets/shopping-cart.png'
-    }
+      this.cart_visible = false
+    },
   },
 }
 </script>
@@ -36,11 +41,12 @@ export default {
   <!-- Topbar -->
   <div class="topbar">
     <img class="logo" src="../src/assets/jillelogo.png">
-    <a href="shop" onclick="" >Shop</a>
+    <a href="shop" onclick="">Shop</a>
     <a href="gallery">Gallery</a>
     <a href="about">About</a>
     <a href="contact">Contact</a>
     <a href="#"><img class="cart" :src="img" @mouseover="changecart" @mouseout="changecart1"></a>
+    <Cart v-if="cart_visible" />
   </div>
 
   <!-- Sidebar -->
@@ -51,8 +57,8 @@ export default {
     <a href="holiday">Holiday</a>
     <a href="other">Other</a>
     <a href="misc">Misc</a>
-    <div class="spacer"/>
-    <News/>
+    <div class="spacer" />
+    <News />
   </div>
 
   <!-- Shop Choices -->
