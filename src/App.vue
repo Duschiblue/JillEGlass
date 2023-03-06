@@ -2,6 +2,7 @@
 <script>
 // Imports
 import News from "./components/News.vue"
+ // import Cart from "./components/Cart.vue"
 
 export default {
   components: {
