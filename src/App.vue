@@ -42,7 +42,7 @@ export default {
   <!-- Topbar -->
   <div class="topbar">
     <img class="logo" src="../src/assets/jillelogo.png">
-    <a href="shop" onclick="">Shop</a>
+    <router-link to="#">Shop</router-link>
     <a href="gallery">Gallery</a>
     <a href="about">About</a>
     <a href="contact">Contact</a>
@@ -64,6 +64,11 @@ export default {
 
   <!-- Shop Choices -->
   <div class="item-container"></div>
+
+  <!-- Main Window -->
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
 <!-- ------------------------------------------------ -->
@@ -94,7 +99,7 @@ export default {
 .topbar {
   background-color: #679289;
   height: 50px;
-  z-index: 9999;
+  z-index: 100;
 }
 
 /* Topbar Elements */
@@ -106,8 +111,21 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
+.topbar router-link {
+  color: azure;
+  padding: 14px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .topbar a:hover {
   color: black;
+}
+
+.topbar router-link:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .all {
@@ -122,7 +140,7 @@ export default {
   height: calc(100% - 50px);
   width: 120px;
   position: fixed;
-  z-index: -99;
+  z-index: -50;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -161,6 +179,13 @@ export default {
 .spacer {
   flex: 1
 }
+
+/* Main Window */
+main {
+  position: relative;
+  z-index: -10000;
+  margin-left: 30px;
+}
 </style>
 
-<!-- ------------------------------------------------ -->
+

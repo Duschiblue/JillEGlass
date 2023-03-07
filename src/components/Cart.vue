@@ -66,6 +66,7 @@ export default {
   vertical-align: middle;
   float: right;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 /* Your Cart Text */
