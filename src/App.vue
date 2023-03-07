@@ -26,6 +26,7 @@ export default {
     changecart1() {
       this.img = '../src/assets/shopping-cart.png'
       this.cart_visible = false
+      console.log('bob');
     },
   },
 }
@@ -45,8 +46,8 @@ export default {
     <a href="gallery">Gallery</a>
     <a href="about">About</a>
     <a href="contact">Contact</a>
-    <a href="#"><img class="cart" :src="img" @mouseover="changecart" @mouseout="changecart1"></a>
-    <Cart v-if="cart_visible" />
+    <a href="#"><img class="cart" :src="img" @mouseover="changecart"></a>
+    <Cart @close="changecart1" v-if="cart_visible" />
   </div>
 
   <!-- Sidebar -->
@@ -86,7 +87,7 @@ export default {
   vertical-align: middle;
   float: right;
   margin-right: 20px;
-  background: none;
+  background-color: #679289;
 }
 
 /* Topbar Design */
