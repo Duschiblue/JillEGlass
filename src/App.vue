@@ -3,6 +3,13 @@
 // Imports
 import News from "./components/News.vue"
 import Cart from "./components/Cart.vue"
+import About from "./components/About.vue"
+
+// Routes
+const routes  {
+  '/shop': Shop,
+  '/about': About
+}
 
 export default {
   components: {
