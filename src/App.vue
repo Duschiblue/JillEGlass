@@ -3,13 +3,7 @@
 // Imports
 import News from "./components/News.vue"
 import Cart from "./components/Cart.vue"
-import About from "./components/About.vue"
 
-// Routes
-const routes  {
-  '/shop': Shop,
-  '/about': About
-}
 
 export default {
   components: {
@@ -55,9 +49,9 @@ export default {
   <div class="topbar">
     <img class="logo" src="../src/assets/jillelogo.png">
     <router-link to="/shop">Shop</router-link>
-    <a href="gallery">Gallery</a>
+    <router-link to="/gallery">Gallery</router-link>
     <router-link to="/about">About</router-link>
-    <a href="contact">Contact</a>
+    <router-link to="/contact">Contact</router-link>
     <a href="#"><img class="cart" :src="img" @mouseover="changecart"></a>
     <Cart @close="changecart1" v-if="cart_visible" />
   </div>

@@ -7,7 +7,7 @@
 <template>
     <!-- About Background -->
     <div class="main">
-        hej
+        Shop
     </div>
 </template>
 

@@ -7,7 +7,7 @@
 <template>
     <!-- About Background -->
     <div class="main">
-        About
+        Gallery
     </div>
 </template>
 
