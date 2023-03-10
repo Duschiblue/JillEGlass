@@ -9,6 +9,11 @@ export default {
     News,
     Cart
   },
+  computed: {
+    username() {
+      return this.$route.params.username
+    },
+  },
 
   // Shopping Cart Hovering
   data() {
@@ -27,7 +32,7 @@ export default {
       this.img = '../src/assets/shopping-cart.png'
       this.cart_visible = false
       console.log('bob');
-    },
+    }
   },
 }
 </script>
@@ -42,9 +47,9 @@ export default {
   <!-- Topbar -->
   <div class="topbar">
     <img class="logo" src="../src/assets/jillelogo.png">
-    <router-link to="#">Shop</router-link>
+    <router-link to="/shop">Shop</router-link>
     <a href="gallery">Gallery</a>
-    <a href="about">About</a>
+    <router-link to="/about">About</router-link>
     <a href="contact">Contact</a>
     <a href="#"><img class="cart" :src="img" @mouseover="changecart"></a>
     <Cart @close="changecart1" v-if="cart_visible" />
@@ -104,7 +109,7 @@ export default {
 
 /* Topbar Elements */
 .topbar a {
-  color: azure;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   vertical-align: middle;
@@ -112,7 +117,7 @@ export default {
 }
 
 .topbar router-link {
-  color: azure;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   vertical-align: middle;

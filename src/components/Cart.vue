@@ -43,7 +43,7 @@ export default {
   right: 0px;
   width: 70px;
   height: 80px;
-  background-color: #9bccc1;
+  background-color: #c0dad4;
   position: fixed;
   border-radius: 10px;
 }
@@ -54,7 +54,7 @@ export default {
   position: fixed;
   top: 50px;
   right: 0px;
-  background-color: #9bccc1;
+  background-color: #c0dad4;
   text-align: center;
   border-radius: 10px;
 }
