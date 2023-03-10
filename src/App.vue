@@ -73,7 +73,7 @@ export default {
 
   <!-- Main Window -->
   <main>
-    <router-view></router-view>
+    <router-view id="router"></router-view>
   </main>
 </template>
 
@@ -189,8 +189,14 @@ export default {
 /* Main Window */
 main {
   position: relative;
-  z-index: -10000;
+  z-index: 1;
   margin-left: 30px;
+  width: 100%;
+}
+
+/* Other Router Windows */
+#router {
+  width: 100%;
 }
 </style>
 

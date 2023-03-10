@@ -7,7 +7,7 @@
 <template>
     <!-- About Background -->
     <div class="main">
-        About
+        <h1>About Jill Elkins</h1>
     </div>
 </template>
 
@@ -15,8 +15,14 @@
 
 <!-- CSS -->
 <style>
+/* Main Div */
 .main {
-    width: 100px;
-    left: 20px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+/* Title Display */
+h1 {
+    margin-top: 0px;
 }
 </style>
