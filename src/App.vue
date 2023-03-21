@@ -103,9 +103,10 @@ export default {
 
 /* Topbar Design */
 .topbar {
+  position: relative;
   background-color: #679289;
   height: 50px;
-  z-index: 100;
+  z-index: 8;
 }
 
 /* Topbar Elements */
@@ -142,11 +143,11 @@ export default {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #9bccc1;
+  background-color: #9bccc1f1;
   height: calc(100% - 50px);
   width: 120px;
   position: fixed;
-  z-index: -50;
+  z-index: 7;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -190,8 +191,8 @@ export default {
 main {
   position: relative;
   z-index: 1;
-  margin-left: 30px;
-  width: 100%;
+  width: caclc(100% - 30px);
+  padding-left: 30px;
 }
 
 /* Other Router Windows */

@@ -55,7 +55,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 9;
 }
 
 /* News */
@@ -90,7 +90,7 @@ export default {
     height: 400px;
     display: flex;
     width: 500px;
-    z-index: 5;
+    z-index: 10;
 }
 
 /* Flex Box Elements */
