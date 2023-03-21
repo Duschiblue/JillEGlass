@@ -2,13 +2,11 @@
 <script>
 // Imports
 import News from "./components/News.vue"
-import Cart from "./components/Cart.vue"
 
 
 export default {
   components: {
     News,
-    Cart
   },
   computed: {
     username() {
@@ -30,9 +28,8 @@ export default {
       this.cart_visible = true
     },
     changecart1() {
-      this.img = '../src/assets/shopping-cart.png'
+      this.img = "../src/assets/shopping-cart.png"
       this.cart_visible = false
-      console.log('bob');
     }
   },
 }
@@ -52,8 +49,7 @@ export default {
     <router-link to="/gallery">Gallery</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/contact">Contact</router-link>
-    <a href="#"><img class="cart" :src="img" @mouseover="changecart"></a>
-    <Cart @close="changecart1" v-if="cart_visible" />
+    <a href="#"><img class="cart" :src="img" @mouseout="changecart1" @mouseover="changecart"></a>
   </div>
 
   <!-- Sidebar -->

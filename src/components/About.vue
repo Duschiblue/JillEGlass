@@ -78,6 +78,7 @@ p {
     width: 100%;
     min-width: min(500px, 100%);
     flex: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Image */
