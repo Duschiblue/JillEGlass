@@ -65,7 +65,7 @@ padding-bottom: 20px;
     flex-direction: column;
 }
 
-.row{
+.row {
     width: inherit;
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +85,7 @@ h2 {
     width: 100%;
 }
 
-#grid{
+#grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -100,7 +100,7 @@ p {
 }
 
 /* Image */
-#lampworkimage img{
+#lampworkimage img {
     width: 100%;
 }
 </style>
