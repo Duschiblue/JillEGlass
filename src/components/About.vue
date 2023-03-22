@@ -5,15 +5,18 @@
 
 <!-- HTML -->
 <template>
+
+
     <!-- About Page -->
     <div class="main">
-        <h1>About The Artist</h1>
-        <div class="information-container">
 
-            <!-- Information -->    
+        <!-- Information -->    
+        <div class="information-container">
             <div class="row">
                 <div id="grid">
                     <div class="text">
+                            <!-- Page Heading -->
+                        <div id="heading" ><h1>About The Artist</h1></div>
                         <h2>About The Glass</h2>
                         <p>All my pieces are made with borosilicate glass (hard glass) and are handsculpted in front of a flame at a few thousand fahrenheit degrees. No use of molds and very minimal use of tools.
                             Starting off with solid glass rods, I shape the glass in the flame by using gathering-, pushing- and pulling techniques to get desired shape. The pieces then rest in a kiln to prevent stress in glass.</p>
@@ -49,6 +52,12 @@
     flex-direction: column;
 }
 
+/* Heading */
+#heading {
+    text-align: left;
+padding-bottom: 20px;
+}
+
 /* Information Container */
 .information-container {
     padding: 40px;
@@ -67,7 +76,6 @@ h1 {
     margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    float: left;
 }
 
 h2 {
