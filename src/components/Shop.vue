@@ -71,6 +71,51 @@
                 <a id="link1"
                     href="https://www.etsy.com/se-en/listing/1425739309/lampwork-boro-glass-pendant-focal-bead?click_key=c5dadec5550e6e9593414657cbdb8f03502d333f%3A1425739309&click_sum=74b158c4&ref=shop_home_recs_7">BUY</a>
             </div>
+
+            <!-- Item 7 = Starfish -->
+            <div class="item1">
+                <div class="imagesize"><img id="images" src="../assets/starfish1.jpg"></div>
+                <h1>Starfish</h1>
+                <p>Lampwork Boro Glass Pendant, Red Pink</p>
+                <a id="link1"
+                    href="https://www.etsy.com/se-en/listing/1396477036/lampwork-boro-glass-pendant-focal-bead?click_key=5e425bfcedc3404305f015651b755a7de6fbc378%3A1396477036&click_sum=36a7b1d8&ref=shop_home_recs_8&cns=1">BUY</a>
+            </div>
+
+            <!-- Item 8 = Turtle -->
+            <div class="item1">
+                <div class="imagesize"><img id="images" src="../assets/turtle1.jpg"></div>
+                <h1>Sea Turtle</h1>
+                <p>Lampwork Boro Glass Pendant, Blue Teal Sparkle</p>
+                <a id="link1"
+                    href="https://www.etsy.com/se-en/listing/1341038501/lampwork-boro-glass-pendant-focal-bead?click_key=0caefe0c7144e2341af75b541c37fcaff690de6b%3A1341038501&click_sum=0afc571e&ref=shop_home_recs_9">BUY</a>
+            </div>
+
+            <!-- Item 9 = Dragon -->
+            <div class="item1">
+                <div class="imagesize"><img id="images" src="../assets/dragon1.jpg"></div>
+                <h1>Dragon</h1>
+                <p>Lampwork Boro Glass Pendant, Turquoise Blue</p>
+                <a id="link1"
+                    href="https://www.etsy.com/se-en/listing/1359957312/lampwork-boro-glass-pendant-focal-bead?click_key=832da06e1c34ac494610e8d89aa1a75b5e67e1e9%3A1359957312&click_sum=39ac7254&ref=shop_home_recs_10">BUY</a>
+            </div>
+
+            <!-- Item 10 = Octopus -->
+            <div class="item1">
+                <div class="imagesize"><img id="images" src="../assets/octopus1.jpg"></div>
+                <h1>Octupus</h1>
+                <p>Lampwork Boro Glass Pendant, Blue Yellow</p>
+                <a id="link1"
+                    href="https://www.etsy.com/se-en/listing/1342058980/lampwork-boro-glass-pendant-focal-bead?click_key=eccb8c78587da32b744a57eca9df1ac257ea4949%3A1342058980&click_sum=4073554a&ref=shop_home_recs_11">BUY</a>
+            </div>
+
+            <!-- Item 11 = Whale -->
+            <div class="item1">
+                <div class="imagesize"><img id="images" src="../assets/val3.jpg"></div>
+                <h1>Humpback Whale</h1>
+                <p>Lampwork Boro Glass Pendant, Green Sparkle</p>
+                <a id="link1"
+                    href="https://www.etsy.com/se-en/listing/1285127531/lampwork-boro-glass-pendant-focal-bead?click_key=a4f95e4acd357ceb67fb87a5127af733f2e22194%3A1285127531&click_sum=f7f65f2d&ref=shop_home_recs_12&cns=1">BUY</a>
+            </div>
         </div>
     </div>
 </template>
@@ -89,8 +134,10 @@
 .itemcontainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
+    margin: auto;
+    gap: 50px;
+    padding: 50px;
 
 }
 
@@ -103,9 +150,9 @@
     position: relative;
     align-items: center;
     text-align: center;
-    margin: 35px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 50px;
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -121,6 +168,12 @@
 #images {
     width: 200px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.3s;
+}
+
+#images:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 1px 4px;
 }
 
 /* Change Image Div */

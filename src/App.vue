@@ -99,7 +99,10 @@ export default {
 
 /* Topbar Design */
 .topbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #679289;
   height: 50px;
   z-index: 8;
