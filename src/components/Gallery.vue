@@ -1,5 +1,9 @@
 <!-- Javascript -->
-<script></script>
+<script>
+    export default{
+        
+    }
+</script>
 
 <!-- ------------------------------------------------ -->
 
@@ -22,7 +26,7 @@
 <!-- ------------------------------------------------ -->
 
 <!-- CSS -->
-<style>
+<style scoped>
 /* Div For All Items */
 .main {
     display: grid;

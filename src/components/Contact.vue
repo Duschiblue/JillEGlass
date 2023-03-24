@@ -14,9 +14,22 @@
 <!-- ------------------------------------------------ -->
 
 <!-- CSS -->
-<style>
-.main {
-    width: 100px;
-    left: 20px;
+<style scoped>
+/* Pc Version (Placeholder) */
+@media screen and (min-width: 1001px) {
+    /* Page */
+    .main {
+        width: 100%;
+        left: 20px;
+    }
+}
+
+/* Small Version (Placeholder) */
+@media screen and (max-width: 1000px) {
+    /* Page */
+    .main {
+        width: 100%;
+        margin-top: 60px;
+    }
 }
 </style>

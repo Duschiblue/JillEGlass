@@ -23,6 +23,7 @@ export default {
   },
 
   methods: {
+    
     changecart() {
       this.img = '../src/assets/sc1.png'
       this.cart_visible = true
@@ -235,6 +236,7 @@ export default {
     font-size: 16px;
     display: block;
     color: black;
+    width: 100%;
   }
 
   /* Sidebar Hovering */

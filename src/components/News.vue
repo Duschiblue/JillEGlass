@@ -60,7 +60,7 @@ export default {
 
 /* News Button */
 .news {
-    /*padding: 12px 6px 10px;*/
+    padding: 12px 6px 10px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -72,10 +72,6 @@ export default {
 /* Smaller Version Included With Sidebar */
 @media screen and (max-width: 1000px) {
   /* News Button */
-  .news {
-   
-  }
-
   .news:hover {
     color: white;
     cursor: pointer;
@@ -159,6 +155,7 @@ export default {
     color: black;
     box-shadow: 3px 3px 5px #679289 inset;
     cursor: pointer;
+    width: 100%;
   }
 
   /* Subscription Text */
