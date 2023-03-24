@@ -124,23 +124,6 @@
 
 <!-- CSS (Scoped) -->
 <style scoped>
-/* Shop Background */
-.main {
-    width: 100px;
-    left: 20px;
-}
-
-/* Div Including All Items */
-.itemcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-    gap: 50px;
-    padding: 50px;
-
-}
-
 /* Item Containers */
 .item1 {
     width: 250px;
@@ -155,6 +138,56 @@
     margin-top: 50px;
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* Pc Display */
+@media screen and (min-width: 501px) {
+    /* Div Including All Items */
+    .itemcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    /* Page */
+    .main {
+        width: 100px;
+        left: 20px;
+    }
+}
+
+/* Smaller Version of Items */
+@media screen and (max-width: 500px) {
+    /* Item Containers */
+    .item1 {
+        width: 250px;
+        height: 370px;
+        background: rgb(238, 229, 220);
+        border-radius: 10px;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 80px;
+        transition: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    } 
+
+    /* Div Including All Items */
+    .itemcontainer {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+
+    /* Page */
+    .main {
+        width: 100px;
+    }
 }
 
 .item1:hover {

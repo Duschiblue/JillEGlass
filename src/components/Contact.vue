@@ -7,7 +7,7 @@
 <template>
     <!-- About Background -->
     <div class="main">
-        Contact
+        contacts placeholder orkar inte skriva mer så det här blir jättebraaaaaaaaaa
     </div>
 </template>
 

@@ -49,7 +49,6 @@ export default {
     <router-link to="/gallery">Gallery</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/contact">Contact</router-link>
-    <a href="#"><img class="cart" :src="img" @mouseout="changecart1" @mouseover="changecart"></a>
   </div>
 
   <!-- Sidebar -->
@@ -87,7 +86,7 @@ export default {
   vertical-align: middle;
 }
 
-/* Cart */
+/* Cart (Not in use atm)*/
 .cart {
   height: 30px;
   margin-top: 10px;
@@ -117,14 +116,6 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.topbar router-link {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  vertical-align: middle;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .topbar a:hover {
   color: black;
 }
@@ -134,14 +125,23 @@ export default {
   cursor: pointer;
 }
 
+/* Smaller Version for Topbar Text */
+@media screen and (max-width: 400px) {
+  .topbar a {
+    color: white;
+    padding: 14px 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
 .all {
   margin-top: 14px;
 }
 
 /* Sidebar Design */
 .sidebar {
-  display: flex;
-  flex-direction: column;
   background-color: #9bccc1f1;
   height: calc(100% - 50px);
   width: 120px;
@@ -151,47 +151,113 @@ export default {
   left: 0;
   overflow-x: hidden;
   padding-top: 50px;
-  left: -90px;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
-.sidebar:hover {
-  left: 0;
+/* Small Version */
+@media screen and (max-width: 1000px) {
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9bccc1f1;
+    height: 50px;
+    z-index: 7;
+  }
+
+  .sidebar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px 3px;
+    margin-left: 3px;
+  }
+
+  .all{
+    margin: 0;
+  }
+
+  .sidebar a:hover {
+    color: white;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .news {
+    display: inline-block;
+  }
+
+  /* Main Window */
+  main {
+    padding-top: 40px;
+  }
 }
+
+/* Pc Version */
+@media screen and (min-width: 1001px) {
+  /* Main Window */
+  main {
+    position: relative;
+    z-index: 1;
+    width: caclc(100% - 30px);
+    padding-left: 30px;
+  }
+
+  /* Sidebar Design */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #9bccc1f1;
+    height: calc(100% - 50px);
+    width: 120px;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+    left: -90px;
+    transition: 0.3s;
+  }
 
 /* Sidebar Elements */
-.sidebar a {
-  padding: 12px 2px 10px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 16px;
-  display: block;
-  color: black;
-}
+  .sidebar a {
+    padding: 12px 2px 10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    color: black;
+  }
 
-.sidebar a:hover {
-  background-color: #ade6d9;
-  color: black;
-  box-shadow: 3px 3px 5px #679289 inset;
-  transition: 0.15s;
-}
+  /* Sidebar Hovering */
+  .sidebar:hover {
+    left: 0;
+  }
 
-.news {
-  margin-bottom: 14px;
-}
+  .sidebar a:hover {
+    background-color: #ade6d9;
+    color: black;
+    box-shadow: 3px 3px 5px #679289 inset;
+    transition: 0.15s;
+  }
 
-/* Sidebar Spacer Between News & Devisions*/
-.spacer {
-  flex: 1
-}
-
-/* Main Window */
-main {
-  position: relative;
-  z-index: 1;
-  width: caclc(100% - 30px);
-  padding-left: 30px;
+  /* News Link */
+  .news {
+    margin-bottom: 14px;
+  }
+  
+  /* Sidebar Spacer Between News & Devisions*/
+  .spacer {
+    flex: 1
+  }
 }
 
 /* Other Router Windows */
